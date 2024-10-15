@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply flex items-center justify-center w-full px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 transition duration-300 ease-in-out shadow-md;
+  }
+  
+  .btn-secondary {
+    @apply flex items-center justify-center w-full px-4 py-2 text-blue-500 bg-white border border-blue-500 rounded-md hover:bg-blue-50 transition duration-300 ease-in-out shadow-md;
+  }
+
+  .btn-primary svg, .btn-secondary svg {
+    @apply mr-2;
+  }
+}
